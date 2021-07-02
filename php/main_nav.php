@@ -1,7 +1,8 @@
 <img alt="nabla-logo" src = "img/nvbla.svg">
 
 <nav class="main-nav">
-    <ul>
+    <span id="hamburger">&#8801;</span>
+    <ul class="nav-list">
         <li><a href="#">Home</a></li>
         <li><a href="#">News</a></li>
         <li><a href="#">Members</a></li>

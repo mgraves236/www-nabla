@@ -1,0 +1,32 @@
+.main-nav {
+  color: $primary-font-color;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  padding-right: 3em;
+
+  li a {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:visited {
+      color: $primary-font-color;
+    }
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+#hamburger {
+  font-size: 3em;
+}
+
+.nav-list {
+  display: none;
+}
