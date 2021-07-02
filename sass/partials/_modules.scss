@@ -1,18 +1,24 @@
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+
+  img {
+    width: 50%;
+  }
+}
+
 .main-nav {
   color: $primary-font-color;
   display: flex;
   justify-content: flex-end;
-  padding: 1em;
   padding-right: 3em;
+  flex-direction: column;
 
   li a {
-    text-transform: uppercase;
     text-decoration: none;
-
-    &:visited {
-      color: $primary-font-color;
-    }
-
     &:hover {
       color: $accent-color;
     }
@@ -20,13 +26,60 @@
 
   ul {
     list-style-type: none;
+    position: absolute;
+    right: 10em;
+    top: 2em;
+    z-index: 1;
+    display: none
   }
 }
 
 #hamburger {
   font-size: 3em;
+  margin-top: .5em;
+  cursor: pointer;
 }
 
-.nav-list {
-  display: none;
+.active {
+  color: $accent-color;
+}
+
+@media only screen and (min-width: 37em) {
+  .header-main {
+    img {
+      width: 40%;
+    }
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .header-main {
+    align-items: center;
+    img {
+      width: auto;
+    }
+  }
+
+  .main-nav  {
+    margin-right: 0;
+    width: 60%;
+    ul {
+      display: flex;
+      flex-direction: row;
+      font-size: 1.5em;
+      width: 100%;
+      position: static;
+      justify-content: space-evenly;
+      margin-right: 0;
+    }
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .active {
+    padding-bottom: 1em;
+    border-bottom: $accent-color solid 2px;
+  }
 }
