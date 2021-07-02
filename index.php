@@ -39,5 +39,6 @@ require_once "php/head.php";
 <?php
 require_once "php/footer.php";
 ?>
+<script src="js/add-blur.js"></script>
 </body>
 </html>
