@@ -17,12 +17,18 @@ body {
 }
 
 footer {
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $accent-color;
+    }
+  }
   margin-top: 0;
   @extend .center;
   @extend .blur;
   padding-left: 1em;
   padding-right: 1em;
-  font-size: 0.5em;
+  font-size: 0.75em;
   line-height: 1em;
   padding-bottom: 1em;
   @include mq {
