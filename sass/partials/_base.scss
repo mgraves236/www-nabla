@@ -9,3 +9,30 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+body {
+  color: $primary-font-color;
+  background-color: black;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.blur {
+  background: rgba(130, 130, 130, 0.35);
+  backdrop-filter: blur(10px);
+  //border-radius: 10px;
+  //border: 1px solid rgba(255,255,255,0.2);
+
+}
+
+#space {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#about-us {
+  width: 50vw;
+}
