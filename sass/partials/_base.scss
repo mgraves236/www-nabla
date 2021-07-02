@@ -42,11 +42,11 @@ address {
   font-size: 3em;
   * {
     transition: 0.2s;
-    color: rgba(180, 180, 180, 0.7);
+    color: rgb(255, 255, 255);
   }
   *:hover {
     transform: scale(1.2);
-    filter: drop-shadow(2px 2px 2px rgba(108, 108, 108, 0.9));
+    filter: drop-shadow(2px 2px 2px rgba(8, 156, 156, 0.9));
   }
 }
 
@@ -73,6 +73,16 @@ article {
   }
   padding: 2em;
   text-align: justify;
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  li::before {
+    content: '\2014 \2002';
+    font-size: 1.7em;
+    color: $accent-color;
+  }
 }
 
 #space {
@@ -117,8 +127,9 @@ article {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-
+  @include mq {
+    justify-content: center;
+  }
   h1 {
     text-transform: uppercase;
     letter-spacing: 0.1em;

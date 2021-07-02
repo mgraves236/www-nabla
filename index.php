@@ -27,8 +27,10 @@ require_once "php/head.php";
             </article>
             <article>
                 <h1>Mentors</h1>
-                Prof. dr hab. Katarzyna Sznajd-Weron, Department of Theoretical Physics
-                Dr Jacek Herbrych, Department of Theoretical Physics
+                <ul>
+                    <li>Prof. dr hab. Katarzyna Sznajd-Weron, Department of Theoretical Physics</li>
+                    <li>Dr Jacek Herbrych, Department of Theoretical Physics</li>
+                </ul>
             </article>
         </div>
     </div>
