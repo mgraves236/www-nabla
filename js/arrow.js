@@ -10,3 +10,12 @@ function animateArrow() {
     }, 1000);
     setTimeout('animateArrow()', 1600);
 }
+
+
+$(window).resize(function() {
+    if ($(window).width() < 1200) {
+        $('.fa-arrow-circle-down').addClass('hide');
+    } else {
+        $('.fa-arrow-circle-down').removeClass('hide');
+    }
+}).resize(); // trigger resize event initially
