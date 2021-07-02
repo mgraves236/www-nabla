@@ -22,6 +22,7 @@
   }
 
   ul {
+    font-weight: $bold-font-weight;
     background-color: blue;
     list-style-type: none;
     position: absolute;
@@ -41,7 +42,7 @@
 }
 
 .active {
-  color: $accent-color;
+  color: $second-accent-color;
 }
 
 @media only screen and (min-width: 39.5em) {
@@ -84,6 +85,6 @@
 
   .active {
     padding-bottom: 1em;
-    border-bottom: $accent-color solid 3px;
+    border-bottom: $second-accent-color solid 3px;
   }
 }
