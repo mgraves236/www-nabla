@@ -42,7 +42,7 @@
 }
 
 .active {
-  color: $second-accent-color;
+  color: $accent-color;
 }
 
 @media only screen and (min-width: 39.5em) {
@@ -85,6 +85,40 @@
 
   .active {
     padding-bottom: 1em;
-    border-bottom: $second-accent-color solid 3px;
+    border-bottom: $accent-color solid 3px;
+  }
+}
+
+footer {
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+  margin-top: 0;
+  @extend .center;
+  @extend .blur;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 0.75em;
+  line-height: 1em;
+  padding-bottom: 1em;
+  @include mq {
+    font-size: inherit;
+  }
+}
+
+address {
+  padding-top: 1em;
+  margin-bottom: 0.5em;
+  font-size: 3em;
+  * {
+    transition: 0.2s;
+    color: rgb(255, 255, 255);
+  }
+  *:hover {
+    transform: scale(1.1);
+    color: $accent-color;
   }
 }

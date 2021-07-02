@@ -9,7 +9,8 @@ require_once "php/head.php";
     <div id="space">
         <article id="about-us">
             <h1>About us</h1>
-            We are a group of students from Wroclaw University of Science and Technology who are passionate about
+            We are a group of students from <a href="http://pwr.edu.pl/en/" target="_blank">Wroclaw University of
+                Science and Technology</a> who are passionate about
             theoretical
             and experimental physics. We aim to promote knowledge about current research among students.
         </article>
@@ -19,17 +20,20 @@ require_once "php/head.php";
             <article>
                 <h1>More</h1>
                 As a student scientific association we organize regular meetings in the form of lectures or overviews,
-                workshops and occasional visits to various research facilities. To find out more about current events
+                workshops and occasional visits to various research facilities. <br>To find out more about current events
                 check 'news'.
 
-                We collaborate with Koło Naukowe NANOIN from Wroclaw University of Science and Technology and
+                <br>We collaborate with <a href="http://www.nanoin.pwr.wroc.pl/" target="_blank"> Koło Naukowe NANOIN</a>
+                    from Wroclaw University of Science and Technology and
                 Koło Naukowe Fizyków Migacz from University of Wrocław.
             </article>
             <article>
                 <h1>Mentors</h1>
                 <ul>
-                    <li>Prof. dr hab. Katarzyna Sznajd-Weron, Department of Theoretical Physics</li>
-                    <li>Dr Jacek Herbrych, Department of Theoretical Physics</li>
+                    <li><a href="http://www.if.pwr.wroc.pl/~katarzynaweron/" target="_blank">Prof. dr hab. Katarzyna
+                            Sznajd-Weron</a>, Department of Theoretical Physics</li>
+                    <li><a href="https://herbrychjacek.bitbucket.io/" target="_blank">Dr Jacek Herbrych</a>,
+                        Department of Theoretical Physics</li>
                 </ul>
             </article>
         </div>
