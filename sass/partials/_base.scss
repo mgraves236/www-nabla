@@ -13,6 +13,21 @@
 body {
   color: $primary-font-color;
   background-color: black;
+  line-height: 1.6em;
+}
+
+footer {
+  @extend .center;
+  @extend .blur;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 0.5em;
+  line-height: 1em;
+  padding-bottom: 1em;
+  @include mq {
+    font-size: inherit;
+  }
+
 }
 
 .main {
@@ -21,20 +36,68 @@ body {
 }
 
 .blur {
-  background: rgba(130, 130, 130, 0.35);
-  backdrop-filter: blur(10px);
-  //border-radius: 10px;
-  //border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(59, 59, 59, 0.35);
+  backdrop-filter: blur(5px);
+}
 
+article {
+  @include mq {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  padding: 2em;
+  text-align: justify;
 }
 
 #space {
   display: flex;
-  justify-content: flex-end;
+ /* @extend .blur;*/
+
+  @include mq {
+    /*background: none;
+    backdrop-filter: none;*/
+    justify-content: flex-end;
+    padding-right: 7em;
+  }
   height: 70vh;
 }
 
 #about-us {
-  width: 40vw;
+  padding-top: 0;
+  @include mq {
+    width: 35vw;
+    margin-bottom: 0;
+  }
 
+  h1 {
+    @include mq {
+      font-size: 3.5em;
+    }
+  }
+}
+
+#description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: inherit;
+  }
+  article {
+    @include mq {
+      flex-basis: 45vw;
+    }
+  }
+}
+
+.center {
+  align-self: center;
+  flex-basis: auto;
+  text-align: center;
 }
