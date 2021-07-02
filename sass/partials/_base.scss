@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .parallax {
   background-image: url("../img/background.png");
   background-attachment: fixed;
@@ -13,7 +17,9 @@
 body {
   color: $primary-font-color;
   background-color: black;
-  line-height: 1.6em;
+  line-height: 1.7em;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -31,9 +37,19 @@ main {
   flex-direction: column;
 }
 
-.blur {
-  background: rgba(59, 59, 59, 0.35);
-  backdrop-filter: blur(5px);
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .blur {
+    background: rgba(59, 59, 59, 0.35);
+    backdrop-filter: blur(7px);
+  }
+
+}
+
+/* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .blur {
+    background: rgba(59, 59, 59, 0.5);
+  }
 }
 
 article {
@@ -71,7 +87,7 @@ article {
     align-items: center;
     padding-right: 4.2em;
   }
-  height: 90vh;
+  height: 73vh;
 }
 
 #about-us {
@@ -122,4 +138,16 @@ article {
 
 .hide {
   display: none;
+}
+
+.fa-arrow-circle-down {
+  position: relative;
+  font-size: 3em;
+  margin-bottom: 1em;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+a [href="#description"] {
+  align-content: center;
+  text-align: center;
 }

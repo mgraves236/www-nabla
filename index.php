@@ -15,6 +15,7 @@ require_once "php/head.php";
             and experimental physics. We aim to promote knowledge about current research among students.
         </article>
     </div>
+    <div class="center"><a href="#description"><i class="fas fa-arrow-circle-down"></i></a></div>
     <div class="blur">
         <div id = "description">
             <article>
@@ -43,5 +44,6 @@ require_once "php/head.php";
 require_once "php/footer.php";
 ?>
 <script src="js/add-blur.js"></script>
+<script src="js/arrow.js"></script>
 </body>
 </html>
