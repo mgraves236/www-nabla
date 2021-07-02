@@ -75,7 +75,6 @@ article {
     width: 35vw;
     margin-bottom: 0;
   }
-
   h1 {
     line-height: 1em;
     @include mq {
@@ -106,4 +105,8 @@ article {
   align-self: center;
   flex-basis: auto;
   text-align: center;
+}
+
+.hide {
+  display: none;
 }

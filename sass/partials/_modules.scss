@@ -12,10 +12,6 @@
 
 .main-nav {
   color: $primary-font-color;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 3em;
-  flex-direction: column;
 
   li a {
     text-decoration: none;
@@ -27,17 +23,19 @@
   ul {
     list-style-type: none;
     position: absolute;
-    right: 10em;
-    top: 2em;
+    right: 3em;
+    top: 4em;
     z-index: 1;
-    display: none
+    padding: 1em;
+    width: auto;
   }
 }
 
 #hamburger {
   font-size: 3em;
-  margin-top: .5em;
+  margin-top: 1em;
   cursor: pointer;
+  margin-right: 1em;
 }
 
 .active {
@@ -63,8 +61,12 @@
   .main-nav  {
     margin-right: 0;
     width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
     ul {
-      display: flex;
+      background-color: transparent;
+      display: flex !important;
       flex-direction: row;
       font-size: 1.5em;
       width: 100%;
