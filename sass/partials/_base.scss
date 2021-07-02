@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 .parallax {
-  background-image: url("img/background.png");
+  background-image: url("../img/background.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
