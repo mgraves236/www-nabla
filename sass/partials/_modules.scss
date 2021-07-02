@@ -15,12 +15,14 @@
 
   li a {
     text-decoration: none;
+    font-size: 1.3em;
     &:hover {
       color: $accent-color;
     }
   }
 
   ul {
+    background-color: blue;
     list-style-type: none;
     position: absolute;
     right: 3em;
@@ -42,7 +44,7 @@
   color: $accent-color;
 }
 
-@media only screen and (min-width: 37em) {
+@media only screen and (min-width: 39.5em) {
   .header-main {
     img {
       width: 40%;
@@ -50,7 +52,7 @@
   }
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 70em) {
   .header-main {
     align-items: center;
     img {
@@ -68,7 +70,7 @@
       background-color: transparent;
       display: flex !important;
       flex-direction: row;
-      font-size: 1.5em;
+      font-size: 1.2em;
       width: 100%;
       position: static;
       justify-content: space-evenly;
@@ -82,6 +84,6 @@
 
   .active {
     padding-bottom: 1em;
-    border-bottom: $accent-color solid 2px;
+    border-bottom: $accent-color solid 3px;
   }
 }
