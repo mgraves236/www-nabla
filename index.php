@@ -31,5 +31,6 @@ require_once "php/head.php";
         </article>
     </div>
 </main>
+<script src="js/menu.js"></script>
 </body>
 </html>
