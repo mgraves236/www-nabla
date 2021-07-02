@@ -30,9 +30,6 @@ require_once "php/head.php";
                 Prof. dr hab. Katarzyna Sznajd-Weron, Department of Theoretical Physics
                 Dr Jacek Herbrych, Department of Theoretical Physics
             </article>
-            <article class="center">
-                <h1>Check out our projects</h1>
-            </article>
         </div>
     </div>
 </main>

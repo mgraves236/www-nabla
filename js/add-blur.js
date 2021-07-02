@@ -1,5 +1,5 @@
 $(window).resize(function() {
-    if ($(window).width() < 1500) {
+    if ($(window).width() < 1000) {
         $('#space').addClass('blur');
     } else {
         $('#space').removeClass('blur');

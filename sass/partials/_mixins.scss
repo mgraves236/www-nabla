@@ -1,5 +1,11 @@
 @mixin mq {
-  @media only screen and (min-width: 1500px) {
+  @media only screen and (min-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin mq2 {
+  @media only screen and (min-width: 1000px) and (max-width: 1400px) {
     @content;
   }
 }

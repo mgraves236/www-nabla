@@ -8,5 +8,6 @@
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
             crossorigin="anonymous">
     </script>
+    <script src="https://kit.fontawesome.com/9d948e6a6d.js" crossorigin="anonymous"></script>
 </head>
 
