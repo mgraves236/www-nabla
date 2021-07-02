@@ -18,7 +18,13 @@ body {
 
 a {
   color: $primary-font-color;
+  text-decoration: none;
+  &:hover {
+    font-weight: bolder;
+    color: $accent-color;
+  }
 }
+
 
 main {
   display: flex;
@@ -65,7 +71,7 @@ article {
     align-items: center;
     padding-right: 4.2em;
   }
-  height: 70vh;
+  height: 90vh;
 }
 
 #about-us {
