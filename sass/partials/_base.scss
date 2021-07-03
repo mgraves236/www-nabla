@@ -80,12 +80,12 @@ article {
   @include mq2 {
     justify-content: flex-end;
     align-items: center;
-    padding-right: 1em;
+    padding-right: 0.5em;
   }
   @include mq {
     justify-content: flex-end;
     align-items: center;
-    padding-right: 4.2em;
+    padding-right: 2em;
   }
   height: 73vh;
 }
