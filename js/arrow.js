@@ -17,6 +17,7 @@ $(window).resize(function() {
         $('.fa-arrow-circle-down').hide();
     } else {
         $('.fa-arrow-circle-down').show();
+
         // hide when scrolled down, show when scrolled up
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {

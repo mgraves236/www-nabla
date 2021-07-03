@@ -141,7 +141,9 @@ article {
 }
 
 .fa-arrow-circle-down {
-  position: absolute;
+  position: relative;
+  z-index: 2;
   font-size: 3em;
   color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 1em;
 }
