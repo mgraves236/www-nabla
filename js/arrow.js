@@ -23,9 +23,9 @@ $(window).resize(function() {
         window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
-                $('.fa-arrow-circle-down').fadeTo(100, 1);
+                $('.fa-arrow-circle-down').fadeTo(10, 1);
             } else {
-                $('.fa-arrow-circle-down').fadeTo(100, 0);
+                $('.fa-arrow-circle-down').fadeTo(10, 0);
             }
             prevScrollpos = currentScrollPos;
         }
