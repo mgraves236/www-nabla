@@ -25,8 +25,10 @@ require_once "php/head.php";
                 check 'news'.
 
                 <br>We collaborate with <a href="http://www.nanoin.pwr.wroc.pl/" target="_blank"> Koło Naukowe NANOIN</a>
-                    from Wroclaw University of Science and Technology and
-                Koło Naukowe Fizyków Migacz from University of Wrocław.
+                and <a href="http://qubit.pwr.edu.pl/">Qubit</a>.
+                    from <a href="http://pwr.edu.pl/en/" target="_blank">Wroclaw University of
+                    Science and Technology</a> and
+                Koło Naukowe Fizyków Migacz from <a href="https://uni.wroc.pl/en/">University of Wrocław</a>.
             </article>
             <article>
                 <h1>Mentors</h1>
