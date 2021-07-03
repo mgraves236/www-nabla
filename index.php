@@ -4,7 +4,10 @@
 require_once "php/head.php";
 ?>
 <body class="parallax">
-<?php require_once "php/main_nav.php"; ?>
+<?php
+    $name = 'index';
+    require_once "php/main_nav.php";
+?>
 <main>
     <div id="space">
         <article id="about-us">

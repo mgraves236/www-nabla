@@ -1,3 +1,6 @@
+<noscript>
+    <p class="info">To get a full experience of the website, please turn on JavaScript</p>
+</noscript>
 <footer>
     <address>
         <a href="https://www.facebook.com/PSSNabla" target="_blank"> <i class="fab fa-facebook"></i></a>

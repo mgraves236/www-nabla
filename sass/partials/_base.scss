@@ -144,6 +144,26 @@ article {
   position: relative;
   z-index: 2;
   font-size: 3em;
-  color: rgba(255, 255, 255, 0.45);
   margin-bottom: 1em;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 2em;
+  margin-right: 2em;
+  @include mq {
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+}
+
+.news {
+  width: 100%;
+  margin: 1.5em;
+  @include mq {
+    width: 30%;
+  }
 }
