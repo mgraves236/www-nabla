@@ -1,8 +1,10 @@
-management = new Array(
-    "Damian Ziomko",
+/*
+Edycja listy członków to te dwie tablice
+ */
+management = ["Damian Ziomko",
     "Weronika Pasek",
     "Magdalena Gołębiowska",
-    "Katarzyna Sadecka");
+    "Katarzyna Sadecka"];
 
 honorary = new Array("mgr Maciej Bieniek");
 

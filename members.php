@@ -1,3 +1,8 @@
+<!--AKTUALIZACJA LISTY CZŁONKÓW-->
+<!--Aby zmienic stan listy członków, należy edytować plik members.js, -->
+<!--podmieniając elementy tablic management lub honorary. -->
+<!--Dokument wygeneruje się dynamicznie.-->
+
 <!DOCTYPE html>
 <html lang="en">
 <?php
