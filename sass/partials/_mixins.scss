@@ -10,14 +10,8 @@
   }
 }
 
-@mixin mq3 {
-  @media only screen and (min-width: 600px){
-    @content;
-  }
-}
-
-@mixin mq4 {
-  @media only screen and (min-width: 900px){
+@mixin mq-news {
+  @media only screen and (min-width: 1000px) {
     @content;
   }
 }
