@@ -154,6 +154,7 @@ article {
   flex-direction: row;
   margin-left: 2em;
   margin-right: 2em;
+  justify-content: center;
   @include mq {
     margin-left: 4em;
     margin-right: 4em;
@@ -163,6 +164,14 @@ article {
 .news {
   width: 100%;
   margin: 1.5em;
+  border: 1px solid rgba(78, 77, 77, 0.5);
+  padding: {
+    left: 1em;
+    right: 1em;
+    bottom: 1.5em;
+    top: 1.5em;
+
+  }
   @include mq {
     width: 30%;
   }

@@ -37,9 +37,9 @@ require_once "php/head.php";
                 <h1>Mentors</h1>
                 <ul>
                     <li><a href="http://www.if.pwr.wroc.pl/~katarzynaweron/" target="_blank">Prof. dr hab. Katarzyna
-                            Sznajd-Weron</a>, Department of Theoretical Physics</li>
+                            Sznajd-Weron</a>, <a href="http://www.kft.pwr.edu.pl/">Department of Theoretical Physics</a></li>
                     <li><a href="https://herbrychjacek.bitbucket.io/" target="_blank">Dr Jacek Herbrych</a>,
-                        Department of Theoretical Physics</li>
+                        <a href="http://www.kft.pwr.edu.pl/">Department of Theoretical Physics</a></li>
                 </ul>
             </article>
         </div>
