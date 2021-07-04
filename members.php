@@ -10,14 +10,13 @@ require_once "php/main_nav.php";
 ?>
 <main id="members">
     <div class="news-container">
-        <div class="member-card blur">
+        <div class="news blur" id="management">
             <h1>Management</h1>
             <i class="fas fa-user"></i>
         </div>
-        <div class="member-card blur">
+        <div class="news blur" id="honorary">
             <h1>Honorary members</h1>
             <i class="fas fa-trophy"></i>
-
         </div>
     </div>
 </main>
@@ -25,5 +24,6 @@ require_once "php/main_nav.php";
 require_once "php/footer.php";
 ?>
 <script src="js/add-blur.js"></script>
+<script src="js/members.js"></script>
 </body>
 </html>

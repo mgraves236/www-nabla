@@ -25,6 +25,7 @@ body {
 a {
   color: $primary-font-color;
   text-decoration: none;
+
   &:hover {
     font-weight: bolder;
     color: $accent-color;
@@ -61,6 +62,7 @@ article {
   }
   padding: 2em;
   text-align: justify;
+
   ul {
     list-style-type: none;
     padding-left: 0;
@@ -103,6 +105,7 @@ article {
   padding-top: 0;
   margin-bottom: 0;
   margin-top: 0;
+
   h1 {
     line-height: 1em;
     @include mq {
@@ -118,11 +121,13 @@ article {
   @include mq {
     justify-content: center;
   }
+
   h1 {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-size: inherit;
   }
+
   article {
     @include mq {
       flex-basis: 45vw;
@@ -186,6 +191,7 @@ article {
     width: 40%;
     margin: 1.5em;
   }
+
   img {
     width: 100%;
   }
@@ -195,50 +201,65 @@ article {
   text-align: center;
   i {
     display: block;
+    margin-top: 15%;
   }
 
   h1::after {
     display: block;
     content: '';
     border-bottom: 0.1em solid $accent-color;
-    width: 75%;
+    width: 40%;
     height: 100%;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 5%;
   }
 }
 
 .fa-user, .fa-trophy {
-  font-size: 15em;
+  font-size: 10em;
 }
 
-.member-card {
+.members-list {
   @extend .news;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-#members {
-  text-align: center;
-  i {
-    display: block;
-  }
-
-  h1::after {
-    display: block;
-    content: '';
-    border-bottom: 0.1em solid $accent-color;
-    width: 75%;
-    height: 100%;
+  align-self: center;
+  h1 {
+    text-align: center;
+    &::after {
+      border-bottom: none !important;
+    }
   }
 }
 
-.fa-user, .fa-trophy {
-  font-size: 15em;
+#members{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.member-card {
-  @extend .news;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+#members .news-container .news {
+  border: 0.2em solid transparent;
+  transition: ease-in-out 1s;
+}
+
+#members .news-container .news:hover {
+  border: 0.2em solid $accent-color;
+}
+
+.fa-arrow-alt-circle-left {
+  font-size: 2em;
+  margin-top: 0 !important;
+  margin-left: 0.1em;
+}
+
+.clickable-icon {
+  * {
+    transform-origin: left 50%;
+    transition: 0.2s;
+    color: rgb(255, 255, 255);
+  }
+  *:hover {
+    transform: scale(1.1);
+    color: $accent-color;
+  }
 }
