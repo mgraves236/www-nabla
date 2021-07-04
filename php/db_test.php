@@ -1,4 +1,45 @@
 <?php
+/*
+ * Oficjalna strona biblioteki: https://sleekdb.github.io/
+ * Jeśli chcemy coś robić z bazą, koniecznie na początku:
+ * require_once "../SleekDB-master/src/Store.php";
+ * $databaseDirectory = "../db/nabla";
+ * w drugiej linijce określamy w jakim katalogu ma być przechowywana baza.
+ * Aby stworzyć/otworzyć nową kolekcję (store):
+ * $newsStore = new \SleekDB\Store("news", $databaseDirectory);
+ * Baza opiera się na json, rekord to tablica asocjacyjna, mogą być zagnieżdżenia.
+ * Przykładowy insert:
+ * $article = [
+ *    "img" => "img/news/zimowy_2020-2021/26-11.jpg",
+ *   "des" => "Zapraszamy na pierwszy w tym
+ *    semestrze wykład zaproszony KNF Nabla.
+ *    Naszym gościem będzie pracownik Katedry Fizyki Teoretycznej WPPT -
+ *    dr Adam Sajna, który przedstawi nam zagadnienie dynamiki kwantowej w reprezentacji
+ *    przestrzeni fazowej. Wykład odbędzie się w formie zdalnej na platformie Zoom.",
+ *    "date" => "zimowy_2020-2021"
+ *    ];
+ * $results = $newsStore->insert($article);
+ * Zmiana nazwy, dodanie czy usnięcie któregoś z atrybutów rekordu, powoduje konieczność
+ * zmian w kodzie!
+ * Usunięcie rekordu:
+ * $newsStore->deleteById(1);
+ * Id jest generowane automatycznie, aby znaleźć id odpowiedniego rekordu można wydrukować całość
+ * bazy ($allNews = $newsStore->findAll(); print_r($allNews);) lub wyszukać po obrazku
+ * za pomocą klauzuli where (przykład na stronie lub w pliku get_news.php) (można też próbować
+ * usuwać po obrazku, jest on unikatowy).
+ * Aktualizaacja:
+ * $newsStore->updateById(32, [ "des" => "Zapraszamy na kolejny wykład z Nablą!
+ *
+ * Tym razem gościmy dra Francisco José Pena Benitez, który poprowadzi wykład
+ * \"Electrons in magnetic fields\"." ]);
+ *
+ * BAZA NIE JEST W ŻADEN SPOSÓB CHRONIONA. Są to zwykłe jsony, skrypt ten należy zawsze po skończeniu
+ * pracy zakomentowywać! Inaczej ktoś wchodząć na adres /php/db_test.php uruchomi skrypt, co może
+ * doprowadzić do korupcji danych w bazie.
+ *
+ * Dodając wykłady z nowego semestru trzeba dodać ten semestr w pliku get_news.php do tablicy na jej początek.
+*/
+
     require_once "../SleekDB-master/src/Store.php";
     $databaseDirectory = "../db/nabla";
     $newsStore = new \SleekDB\Store("news", $databaseDirectory);
