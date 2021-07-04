@@ -162,7 +162,7 @@
         position: relative;
         &:after {
           position: absolute;
-          transition: .5s ease-in;
+          transition: .3s linear;
           content: '';
           width: 0;
           bottom: 0;
