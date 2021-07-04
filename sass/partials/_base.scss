@@ -190,3 +190,55 @@ article {
     width: 100%;
   }
 }
+
+#members {
+  text-align: center;
+  i {
+    display: block;
+  }
+
+  h1::after {
+    display: block;
+    content: '';
+    border-bottom: 0.1em solid $accent-color;
+    width: 75%;
+    height: 100%;
+  }
+}
+
+.fa-user, .fa-trophy {
+  font-size: 15em;
+}
+
+.member-card {
+  @extend .news;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#members {
+  text-align: center;
+  i {
+    display: block;
+  }
+
+  h1::after {
+    display: block;
+    content: '';
+    border-bottom: 0.1em solid $accent-color;
+    width: 75%;
+    height: 100%;
+  }
+}
+
+.fa-user, .fa-trophy {
+  font-size: 15em;
+}
+
+.member-card {
+  @extend .news;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
