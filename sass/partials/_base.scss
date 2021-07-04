@@ -183,6 +183,12 @@ article {
     bottom: 1.5em;
     top: 1.5em;
   }
+  p {
+    padding-right: .5em;
+    padding-left: .5em;
+    overflow-y: auto;
+    height: 15em;
+  }
   @include mq {
     width: 30%;
     margin: 1.5em;
@@ -259,6 +265,19 @@ article {
     color: rgb(255, 255, 255);
   }
   *:hover {
+    transform: scale(1.1);
+    color: $accent-color;
+  }
+}
+
+.fa-file-video, .fa-file {
+  font-size: 2.5em;
+  padding: 0.2em;
+  align-self: end;
+  transition: 0.2s;
+  color: rgb(255, 255, 255);
+  float: right;
+  &:hover {
     transform: scale(1.1);
     color: $accent-color;
   }

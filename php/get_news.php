@@ -20,8 +20,15 @@
     foreach ($news as &$value) {
         echo '<article class="news blur">'. '<img src="' .
                 $value['img'] . '">' .
-            '<p>'. $value['des'] . '</p>'
-         .'</article>';
+            '<p>'. $value['des'] . '</p>';
+        if (isset($value['rec'])) {
+            echo '<a href="' . $value['rec']. '" target="_blank"><i class=" far fa-file-video"></i></a>';
+        }
+        if (isset($value['pres'])) {
+            echo '<a href="' . $value['pres']. '" target="_blank"><i class="far fa-file"></i></a>';
+        }
+
+         echo '</article>';
     }
     echo '</div>';
     // pagination
@@ -30,7 +37,6 @@
     // previous
     if ($page > 1) echo '<a href="news.php?page=' . ($page - 1) . '"> &lt; </a>';
     for ($i = 1; $i <= count($dates_arr); $i++) {
-       // echo '<a href="news.php?page=' . $i .'">' . $i . '</a>';
         echo '<a href="news.php?page=' . $i .'" class="';
         echo $i == $page ? 'current blur' : ' ';
         echo '">' . $i . '</a>';

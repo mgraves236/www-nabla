@@ -451,16 +451,22 @@
 //];
 //$results = $newsStore->insert($article);
 //$newsStore->deleteById(1);
-//$newsStore->updateById(32, [ "des" => "Zapraszamy na kolejny wykład z Nablą!
+//$newsStore->updateById(17, [ "rec" => "video/letni_2020-2021/10-03.mp4" ]);
+
+//$users = $newsStore->findBy(["img", "=", "img/news/letni_2020-2021/26-05.jpg"]);
 //
-//Tym razem gościmy dra Francisco José Pena Benitez, który poprowadzi wykład
-// \"Electrons in magnetic fields\".
+//foreach($users as $key => $user){
+//    // change the properties of the users
+//    //unset($user["pres"] );
+//   //$user["pres"] = "presentations/letni_2020-2021/14-04.pdf";
+//    $user["rec"] = "video/letni_2020-2021/26-05.mp4";
 //
-//Abstrakt:
-//Electrons in a magnetic field organize in term of the so-called Landau levels.
-//In particular, I will talk about the properties of relativistic and non-relativistic
-//fermions in presence of an uniform magnetic field, and discuss the role of such an old
-//problem for the understanding of topological matter, particle physics and fermionic fluids in general." ]);
+//    // push changed user back to the users array
+//    $users[$key] = $user;
+//}
+//
+//// update all users that had the name Josh
+//$newsStore->update( $users );
 $allNews = $newsStore->findAll();
 
     print_r($allNews);
