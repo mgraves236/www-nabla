@@ -149,15 +149,21 @@ article {
 }
 
 .news-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-left: 2em;
-  margin-right: 2em;
   justify-content: center;
+  padding-left: 2em;
+  padding-right: 2em;
   @include mq {
-    margin-left: 4em;
-    margin-right: 4em;
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+
+  @include mq4 {
+    padding-left: 5em;
+    padding-right: 5em;
   }
 }
 
@@ -170,9 +176,11 @@ article {
     right: 1em;
     bottom: 1.5em;
     top: 1.5em;
-
   }
   @include mq {
     width: 30%;
+  }
+  img {
+    width: 100%;
   }
 }

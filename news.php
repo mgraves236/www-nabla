@@ -10,15 +10,16 @@ require_once "php/head.php";
 ?>
 <main>
     <div class="news-container">
-        <article class="news blur">
-            lorem ipsum bla bla
-        </article>
-        <article class="news blur">
-            lorem ipsum bla bla
-        </article>
-        <article class="news blur">
-            lorem ipsum bla bla
-        </article>
+    <?php require_once "php/get_news.php"; ?>
+<!--        article class="news blur">-->
+<!--            lorem ipsum bla bla-->
+<!--        </article>-->
+<!--        <article class="news blur">-->
+<!--            lorem ipsum bla bla-->
+<!--        </article>-->
+<!--        <article class="news blur">-->
+<!--            lorem ipsum bla bla-->
+<!--        </article>-->
     </div>
 </main>
 <?php
