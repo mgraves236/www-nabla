@@ -163,7 +163,12 @@ article {
 
 .news {
   width: 100%;
-  margin: 1.5em;
+  margin: {
+    left: 1em;
+    right: 1em;
+    top: 1.5em;
+    bottom: 1.5em;
+  }
   border: 1px solid rgba(78, 77, 77, 0.5);
   padding: {
     left: 1em;
@@ -174,5 +179,10 @@ article {
   }
   @include mq {
     width: 30%;
+    margin: 1.5em;
+  }
+  @include mq-news {
+    width: 40%;
+    margin: 1.5em;
   }
 }
