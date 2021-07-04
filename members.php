@@ -8,14 +8,14 @@ require_once "php/head.php";
 $name = 'members';
 require_once "php/main_nav.php";
 ?>
-<main>
+<main id="members">
     <div class="news-container">
-        <div class="news blur">
-            Management
+        <div class="member-card blur">
+            <h1>Management</h1>
             <i class="fas fa-user"></i>
         </div>
-        <div class="news blur">
-            Honorary members
+        <div class="member-card blur">
+            <h1>Honorary members</h1>
             <i class="fas fa-trophy"></i>
 
         </div>
