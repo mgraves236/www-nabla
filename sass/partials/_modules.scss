@@ -90,6 +90,8 @@
   color: $primary-font-color;
 
   li a {
+    padding: 0;
+    margin: 0;
     text-decoration: none;
     font-size: 3em;
     line-height: 1.5em;
@@ -99,10 +101,12 @@
   }
 
   ul {
-    text-align: center;
     background-color: $background-nav-mobile-color;
     list-style-type: none;
     position: absolute;
+    text-align: center;
+    margin: 0;
+    padding: 0;
     color: white;
     top: 0;
     width: 100%;
@@ -245,4 +249,38 @@ address {
   padding: 1em;
   position: fixed;
   background-color: $accent-color;
+}
+
+.pagination {
+  font-size: 1.2em;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  margin-top: .5em;
+  a {
+    text-align: center;
+    display: block;
+    padding: .5em;
+    width: 2.5em; // fontsize + 2*padding
+    line-height: 1.5em;
+    height: 2.5em;
+  }
+
+  .current {
+    color: $accent-color;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+
+    -webkit-background-clip: padding-box;
+    -moz-background-clip:    padding;
+    background-clip:         padding-box;
+  }
+
+  @include mq {
+    font-size: 1.5em;
+  }
 }

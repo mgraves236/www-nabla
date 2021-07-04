@@ -396,7 +396,7 @@
 //
 //$article = [
 //    "img" => "img/news/letni_2020-2021/16-06.jpg",
-//    "des" => "ZZapraszamy na kolejny wykład z Nablą!
+//    "des" => "Zapraszamy na kolejny wykład z Nablą!
 //
 //Tym razem gościmy dra Francisco José Pena Benitez, który poprowadzi wykład
 // \"Electrons in magnetic fields\".
@@ -410,6 +410,16 @@
 //];
 //$results = $newsStore->insert($article);
 //$newsStore->deleteById(1);
+//$newsStore->updateById(32, [ "des" => "Zapraszamy na kolejny wykład z Nablą!
+//
+//Tym razem gościmy dra Francisco José Pena Benitez, który poprowadzi wykład
+// \"Electrons in magnetic fields\".
+//
+//Abstrakt:
+//Electrons in a magnetic field organize in term of the so-called Landau levels.
+//In particular, I will talk about the properties of relativistic and non-relativistic
+//fermions in presence of an uniform magnetic field, and discuss the role of such an old
+//problem for the understanding of topological matter, particle physics and fermionic fluids in general." ]);
 $allNews = $newsStore->findAll();
 
     print_r($allNews);
