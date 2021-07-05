@@ -159,8 +159,8 @@ article {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 0em;
+  padding-right: 0em;
   @include mq {
     padding-left: 10em;
     padding-right: 10em;
@@ -174,7 +174,7 @@ article {
     left: 1em;
     right: 1em;
     top: 1.5em;
-    bottom: 1.5em;
+   // bottom: 1.5em;
   }
   border: 1px solid rgba(78, 77, 77, 0.5);
   padding: {
@@ -184,10 +184,13 @@ article {
     top: 1.5em;
   }
   p {
-    padding-right: .5em;
-    padding-left: .5em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    padding: 1.5em;
     overflow-y: auto;
     height: 15em;
+    background-color: rgba(192, 192, 192, 0.17);
+    border-radius: .5em;
   }
   @include mq {
     width: 30%;
@@ -273,6 +276,8 @@ article {
 .fa-file-video, .fa-file {
   font-size: 2.5em;
   padding: 0.2em;
+  padding-bottom: .1em;
+  margin-bottom: 0;
   align-self: end;
   transition: 0.2s;
   color: rgb(255, 255, 255);
