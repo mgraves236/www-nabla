@@ -1,7 +1,7 @@
 function setUp($arr) {
     let i = 0;
     while (!$arr.eq(i).hasClass("curr-proj")) {
-        $arr.eq(i).css({'opacity': .3 * (i + 1), 'font-size': .8 + (i+1) / 3 + 'em'});
+        $arr.eq(i).css({'opacity': .3 * (i + 1), 'font-size': .7 + (i+1) / 3 + 'em'});
         i++;
     }
     i++;
@@ -14,11 +14,18 @@ function setUp($arr) {
 
 function roll($item, $arr) {
     let next = $arr.index($item);
-    //let curr = $arr.index($('.curr-proj'));
-    $arr.eq((next-2) % $arr.length).insertBefore($item);
-    $arr.eq((next-1) % $arr.length).insertBefore($item);
-    $arr.eq((next+2) % $arr.length).insertAfter($item);
-    $arr.eq((next+1) % $arr.length).insertAfter($item);
+    let curr = $arr.index($('.curr-proj'));
+    $arr.eq((next-2) % ($arr.length - 1)).insertBefore($item);
+    $arr.eq((next-1) % ($arr.length - 1)).insertBefore($item);
+    $arr.eq((next+2) % ($arr.length - 1)).insertAfter($item);
+    $arr.eq((next+1) % ($arr.length - 1)).insertAfter($item);
+
+    for (i = 0; i < $arr.length; i++) {
+        $arr.eq(i).animate({bottom: "-50"}, 0);
+        $arr.eq(i).animate({bottom: "0"}, 500);
+        // $arr.eq(i).animate({top: "-50"}, 0);
+        // $arr.eq(i).animate({top: "0"}, 500);
+    }
 }
 
 
@@ -27,20 +34,30 @@ $('.projects-container img').attr('src', "img/projects/" + $('.curr-proj').attr(
 setUp($links);
 
 $links.on('click', function() {
-    roll($(this), $links);
-    //$(this).insertBefore($('.curr-proj'));
-    $links = $('.list-projects a');
-    $links.removeClass('curr-proj');
-    $(this).addClass('curr-proj');
-    $('.projects-container img').attr('src', "img/projects/" + $(this).attr('id') + ".png")
-    setUp($links);
-    $(this).css({'font-size': '1.5em', 'opacity':'1'});
+    // let next = $links.index($(this));
+    // let curr = $links.index($('.curr-proj'));
+    if ($(this).css('opacity') > 0) {
+        roll($(this), $links);
+        $links = $('.list-projects a');
+        $links.removeClass('curr-proj');
+        $(this).addClass('curr-proj');
+        $('.projects-container img').attr('src', "img/projects/" + $(this).attr('id') + ".png")
+        setUp($links);
+        $(this).css({'font-size': '1.5em', 'opacity': '1'});
+    }
 });
 
+var old = 1;
 $links.on("mouseover", function() {
-    $(this).css('color', "#089c9c");
+    old = $(this).css('opacity');
+    if (old > 0) {
+        $(this).css({'color': "#089c9c", 'opacity': 1});
+    }
 });
 
 $links.on("mouseleave", function() {
-    $(this).css('color', "white");
+    $(this).css({'color': "white", 'opacity': old});
+    if ($(this).hasClass('curr-proj')) {
+        $(this).css({'opacity': '1'});
+    }
 });

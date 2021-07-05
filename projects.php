@@ -14,16 +14,12 @@ require_once "php/main_nav.php";
             <img/>
         </div>
         <div class="list-projects">
+            <div class="indicator"></div>
             <a id="FOKA">FOKA</a>
-<!--            <br>-->
             <a id="workshops-icon">Workshops</a>
-<!--            <br>-->
             <a id="lectures-icon" class="curr-proj">Lectures</a>
-<!--            <br>-->
             <a id="clubj">Journal Club</a>
-<!--            <br>-->
             <a id="stars-logo">VSR Team</a>
-<!--            <br>-->
             <a id="tutorials-icon">Tutorials</a>
         </div>
     </article>
