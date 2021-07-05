@@ -251,7 +251,7 @@ article {
   transition: ease-in-out 1s;
 }
 
-#members .news-container .news:hover {
+#members .news-container .news:hover, #members .news-container .news:active, #members .news-container .news:focus   {
   border: 0.2em solid $accent-color;
 }
 
@@ -267,7 +267,7 @@ article {
     transition: 0.2s;
     color: rgb(255, 255, 255);
   }
-  *:hover {
+  *:hover, *:focus, *:active {
     transform: scale(1.1);
     color: $accent-color;
   }
@@ -282,8 +282,16 @@ article {
   transition: 0.2s;
   color: rgb(255, 255, 255);
   float: right;
-  &:hover {
+  &:hover, &:focus, &:active {
     transform: scale(1.1);
     color: $accent-color;
   }
+}
+
+
+.icon-hover {
+@include mq-touch {
+  transform: scale(1.1);
+  color: $accent-color;
+}
 }

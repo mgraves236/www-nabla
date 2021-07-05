@@ -49,7 +49,6 @@ function printMembers(arr) {
         str = str.concat("<li>" + arr[i] + "</li>");
     }
     str.concat("</ul>");
-    console.log(str);
     return str;
 }
 
