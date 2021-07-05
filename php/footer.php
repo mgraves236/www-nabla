@@ -12,3 +12,4 @@
     <a href="https://github.com/mgraves236" target="_blank">Magdalena Gołębiowska </a>
 </footer>
 <script src="js/menu.js"></script>
+<script src="js/touch-screens.js"></script>
