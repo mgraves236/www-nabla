@@ -11,7 +11,7 @@ require_once "php/main_nav.php";
 <main>
     <article class="blur projects-container">
         <div class="img-container">
-            <img/>
+            <a href="#"><img/></a>
         </div>
         <div class="list-projects">
             <div class="indicator"></div>
