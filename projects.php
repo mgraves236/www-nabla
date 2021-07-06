@@ -21,6 +21,7 @@ require_once "php/main_nav.php";
             <a id="clubj">Journal Club</a>
             <a id="stars-logo">VSR Team</a>
             <a id="tutorials-icon">Tutorials</a>
+            <a id="kumquat">Kumquat</a>
         </div>
     </article>
 </main>

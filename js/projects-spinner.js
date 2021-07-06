@@ -9,14 +9,17 @@ function setUp($arr) {
         $arr.eq(i).css({'opacity': 1 - .2 * (i - 1), 'font-size': 2 - (i-1) / 3 + 'em'});
         i++;
     }
+    $arr.eq($arr.length - 2).css({'opacity': '0'});
     $arr.last().css({'opacity': '0'});
 }
 
 function roll($item, $arr) {
     let next = $arr.index($item);
     let curr = $arr.index($('.curr-proj'));
+    $arr.eq((next-3) % ($arr.length - 1)).insertAfter($item);
     $arr.eq((next-2) % ($arr.length - 1)).insertBefore($item);
     $arr.eq((next-1) % ($arr.length - 1)).insertBefore($item);
+    $arr.eq((next+3) % ($arr.length - 1)).insertAfter($item);
     $arr.eq((next+2) % ($arr.length - 1)).insertAfter($item);
     $arr.eq((next+1) % ($arr.length - 1)).insertAfter($item);
 
@@ -47,6 +50,8 @@ $links.on('click', function() {
     }
     if ($(this).attr('id') === 'FOKA') {
         $('.img-container a').prop({'href': 'http://www.foka.pwr.edu.pl/', 'target': '_blank'});
+    } else if ($(this).attr('id') === 'kumquat') {
+        $('.img-container a').prop({'href': 'https://kumquat.pwr.edu.pl/', 'target': '_blank'});
     } else {
         $('.img-container a').prop({'href': '#', 'target': '_self'});
     }
