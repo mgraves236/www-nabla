@@ -45,6 +45,11 @@ $links.on('click', function() {
         setUp($links);
         $(this).css({'font-size': '1.5em', 'opacity': '1'});
     }
+    if ($(this).attr('id') === 'FOKA') {
+        $('.img-container a').prop({'href': 'http://www.foka.pwr.edu.pl/', 'target': '_blank'});
+    } else {
+        $('.img-container a').prop({'href': '#', 'target': '_self'});
+    }
 });
 
 var old = 1;
